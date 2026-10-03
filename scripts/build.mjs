@@ -1,6 +1,8 @@
 // Builds the static website into dist/.
 // Usage: node scripts/build.mjs [--offline]
 // Set GITHUB_TOKEN to raise the GitHub API rate limit when loading contribution details.
+import { renderIndex, renderNotFound, renderProfile } from '../lib/render.mjs';
+import { DEFAULT_LOCALE, LOCALES } from '../lib/i18n.mjs';
 import { execFileSync } from 'node:child_process';
 import { copyFile, mkdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
