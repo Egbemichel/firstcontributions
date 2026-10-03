@@ -138,6 +138,13 @@ h2 { font-size: 1.35rem; margin: 0; }
 .pill-merged, .pill-issue.pill-completed { background: var(--merged-soft); color: var(--merged); }
 .pill-pull.pill-closed { background: var(--closed-soft); color: var(--closed); }
 
+.nav-lang {
+  font-size: 0.8rem; font-weight: 600; padding: 4px 10px;
+  border: 1px solid var(--border); border-radius: 999px; color: var(--muted);
+}
+.nav-lang:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+
+
 .footer { padding-top: 32px; padding-bottom: 48px; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); }
 
 @media (max-width: 560px) {
